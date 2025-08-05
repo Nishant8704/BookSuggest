@@ -20,7 +20,6 @@ def index():
                            votes=list(popular_df['num_rating'].values),
                            rating=[round(x, 2) for x in popular_df['avg_rating'].values])
 
-
 @app.route('/recommend', methods=['GET', 'POST'])
 def recommend_ui():
     if request.method == 'POST':
@@ -51,6 +50,6 @@ def recommend_ui():
 
     return render_template('recommend.html', data=[], not_found=False)
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
+# Correct single entry point
+if __name__ == "__main__":
+    app.run()
