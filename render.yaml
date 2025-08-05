@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: booksuggest
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    region: oregon
+    plan: free
+    branch: main
+    pythonVersion: 3.10
+    autoDeploy: true
