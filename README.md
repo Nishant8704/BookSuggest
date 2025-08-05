@@ -30,26 +30,19 @@ BookSuggest is a web-based Book Recommendation System built using Flask. It offe
 
 
 ## 📁 Project Structure
-BookSuggest/
-│
-├── static/
-│ └── style.css # Custom CSS styles
-│
-├── templates/
-│ ├── index.html # Homepage with top 50 books and search bar
-│ └── recommend.html # Recommendation result page
-│
-├── .gitignore # Git ignored files
-├── app.py # Main Flask application
-├── requirements.txt # Python dependencies
-├── runtime.txt # Python version for deployment
-│
-├── popular.pkl # Pickled DataFrame of top 50 books
-├── pt.pkl # Pickled pivot table
-├── books.pkl # Pickled DataFrame with book metadata
-├── similarity_score.pkl # Cosine similarity matrix
-│
-└── README.md # Project documentation (this file)
+| File/Folder            | Description |
+|------------------------|-------------|
+| `app.py`               | Core application file with Flask routes and logic. |
+| `templates/`           | Contains the HTML pages – homepage and result page. |
+| `static/style.css`     | CSS file to style the HTML pages. |
+| `requirements.txt`     | Lists all required Python libraries. |
+| `runtime.txt`          | Declares the Python version for deployment. |
+| `popular.pkl`          | DataFrame of most popular books used on homepage. |
+| `pt.pkl`               | Pivot table for book-user matrix. |
+| `books.pkl`            | Metadata for all books in the dataset. |
+| `similarity_score.pkl` | Precomputed cosine similarity matrix. |
+| `.gitignore`           | Prevents unwanted files (like `.pkl`, `.pyc`, `venv/`) from being tracked by Git. |
+
 
 
 ---
